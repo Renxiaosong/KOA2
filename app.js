@@ -16,14 +16,14 @@ const logUtil = require('./utils/log_util');
 //中间件
 const response_formatter = require('./middlewares/response_formatter');
 // error handler
-onerror(app)
+onerror(app);
 
 // middlewares
 app.use(bodyparser({
   enableTypes:['json', 'form', 'text']
 }))
-app.use(json())
-app.use(convert(logger()))
+app.use(json());
+app.use(convert(logger()));
 app.use(require('koa-static')(__dirname + '/public'));
 
 app.use(views(__dirname + '/views', {
@@ -61,6 +61,6 @@ app.use(router.routes(), router.allowedMethods());
 app.on('error',function (err,ctx) {
     console.log(err);
     logger.error('server error',err,ctx);
-})
+});
 
-module.exports = app
+module.exports = app;

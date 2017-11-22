@@ -3,16 +3,24 @@ const ApiErrorNames = require('../error/ApiErrorName');
 const usersModule = require('../../system_modules/user');
 
 
+//用户登录
+exports.login = async(ctx,next) =>{
+    try{
+        const params = ctx.query;
+
+    }catch (error){
+
+    }
+};
+
 //根据id获取用户
 exports.getUser = async (ctx, next) => {
     try {
         const params = ctx.query;
-        //如果id ！=1 抛出异常
         if (!params.id) {
             ctx.error = ApiErrorNames.PARAMS_ERROR;
             return;
         }
-
         const query = {
             _id: params.id
         };
@@ -92,5 +100,4 @@ exports.deleteUser = async (ctx, next) => {
     } catch (err) {
         ctx.error = err;
     }
-
-}
+};
