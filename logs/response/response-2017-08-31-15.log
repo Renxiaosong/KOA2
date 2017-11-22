@@ -1,0 +1,434 @@
+[2017-08-31 15:20:11.248] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:21:39.162] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:21:42.980] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:23:08.715] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 45
+response status: 200
+response body: 
+"<!DOCTYPE html>\n<html>\n  <head>\n    <title>Hello Koa 2!hahhahahahha</title>\n    <link rel='stylesheet' href='/stylesheets/style.css' />\n  </head>\n  <body>\n    <h1>Hello Koa 2!hahhahahahha</h1>\n    <p>EJS Welcome to Hello Koa 2!hahhahahahha</p>\n  </body>\n</html>\n"
+*************** response log end ***************
+
+[2017-08-31 15:23:45.043] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 28
+response status: 200
+response body: 
+"<!DOCTYPE html>\n<html>\n  <head>\n    <title>Hello Koa 2!hahhahahahha</title>\n    <link rel='stylesheet' href='/stylesheets/style.css' />\n  </head>\n  <body>\n    <h1>Hello Koa 2!hahhahahahha</h1>\n    <p>EJS Welcome to Hello Koa 2!hahhahahahha</p>\n  </body>\n</html>\n"
+*************** response log end ***************
+
+[2017-08-31 15:23:53.940] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:24:12.534] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 3
+response status: 200
+response body: 
+"this is a users response!"
+*************** response log end ***************
+
+[2017-08-31 15:24:21.904] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 10
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:27:21.599] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 5
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:27:56.791] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 5
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:28:32.713] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 59
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:37:29.138] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 6
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:37:56.493] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 6
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:38:25.847] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 5
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:38:42.748] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 5
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:39:13.105] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 53
+error name: Error
+error message: Invalid argument to findOne(): ''
+error stack: Error: Invalid argument to findOne(): ''
+    at model.Query.Query.findOne (E:\workspace\node\koaDemo\node_modules\mongoose\lib\query.js:1449:11)
+    at Function.findOne (E:\workspace\node\koaDemo\node_modules\mongoose\lib\model.js:1407:13)
+    at exports.findOne (E:\workspace\node\koaDemo\system_modules\user.js:15:17)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at allowedMethods (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:406:12)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:44:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+*************** error log end ***************
+
+[2017-08-31 15:39:37.956] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 5
+error name: Error
+error message: Invalid argument to findOne(): ''
+error stack: Error: Invalid argument to findOne(): ''
+    at model.Query.Query.findOne (E:\workspace\node\koaDemo\node_modules\mongoose\lib\query.js:1449:11)
+    at Function.findOne (E:\workspace\node\koaDemo\node_modules\mongoose\lib\model.js:1407:13)
+    at exports.findOne (E:\workspace\node\koaDemo\system_modules\user.js:15:17)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at allowedMethods (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:406:12)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:44:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+*************** error log end ***************
+
+[2017-08-31 15:40:02.722] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 5
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:44:40.616] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 4
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:47:32.947] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /users/saveUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 4
+error name: ReferenceError
+error message: user is not defined
+error stack: ReferenceError: user is not defined
+    at exports.saveUser (E:\workspace\node\koaDemo\system_modules\user.js:27:18)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at allowedMethods (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:406:12)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:44:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at views (E:\workspace\node\koaDemo\node_modules\koa-views\lib\index.js:61:12)
+*************** error log end ***************
+
+[2017-08-31 15:48:33.468] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /users/saveUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 10
+error name: TypeError
+error message: callback is not a function
+error stack: TypeError: callback is not a function
+    at exports.saveUser (E:\workspace\node\koaDemo\system_modules\user.js:40:5)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at allowedMethods (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:406:12)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:44:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at views (E:\workspace\node\koaDemo\node_modules\koa-views\lib\index.js:61:12)
+*************** error log end ***************
+
+[2017-08-31 15:53:23.533] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 4
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:55:21.711] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /users/saveUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 10
+error name: TypeError
+error message: callback is not a function
+error stack: TypeError: callback is not a function
+    at exports.saveUser (E:\workspace\node\koaDemo\system_modules\user.js:40:5)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at allowedMethods (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:406:12)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:44:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at views (E:\workspace\node\koaDemo\node_modules\koa-views\lib\index.js:61:12)
+*************** error log end ***************
+
+[2017-08-31 15:56:13.998] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 4
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:56:45.677] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 4
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:58:21.344] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 4
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 15:59:33.372] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 3
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+

@@ -1,0 +1,154 @@
+[2017-08-31 16:01:20.700] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 2
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 16:01:39.533] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 2
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 16:03:10.506] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 5
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 16:03:29.676] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 6
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 16:04:29.835] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 7
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 16:04:53.391] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 6
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 16:13:15.321] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 26
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 16:13:16.438] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 16:24:47.831] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/saveUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 9
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 16:26:34.617] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/saveUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 10
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-08-31 16:26:56.396] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /users/saveUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 11
+error name: TypeError
+error message: callback is not a function
+error stack: TypeError: callback is not a function
+    at exports.saveUser (E:\workspace\node\koaDemo\system_modules\user.js:34:5)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at allowedMethods (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:406:12)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:44:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at views (E:\workspace\node\koaDemo\node_modules\koa-views\lib\index.js:61:12)
+*************** error log end ***************
+

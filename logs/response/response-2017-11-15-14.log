@@ -1,0 +1,535 @@
+[2017-11-15 14:04:10.868] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /users/registerUser
+request client ip:  ::1
+request body: 
+{"name":"Herry","age":"18"}
+response time: 48
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"__v":0,"name":"Herry","age":18,"_id":"5a0bd8da5279f82c908ada2f"}}
+*************** response log end ***************
+
+[2017-11-15 14:04:19.709] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: POST
+request originalUrl:  /users/registerUser
+request client ip:  ::1
+request body: 
+{"name":"Herry"}
+response time: 1
+error name: paramsError
+error message: 参数缺失
+error stack: paramsError: 参数缺失
+    at router.use (E:\workspace\node\koaDemo\routes\api\user_router.js:10:15)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+*************** error log end ***************
+
+[2017-11-15 14:04:24.196] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /users/registerUser
+request client ip:  ::1
+request body: 
+{"name":"Herry","age":"18"}
+response time: 6
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"__v":0,"name":"Herry","age":18,"_id":"5a0bd8e85279f82c908ada30"}}
+*************** response log end ***************
+
+[2017-11-15 14:04:37.058] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 14
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"n":0,"nModified":0,"ok":1}}
+*************** response log end ***************
+
+[2017-11-15 14:05:21.392] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5056","name":"Brain"}
+response time: 3
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"n":0,"nModified":0,"ok":1}}
+*************** response log end ***************
+
+[2017-11-15 14:07:39.471] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5056","name":"Brain"}
+response time: 19
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"n":1,"nModified":1,"ok":1}}
+*************** response log end ***************
+
+[2017-11-15 14:08:03.926] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5063","name":"Brain"}
+response time: 4
+error name: noPatchError
+error message: 参数缺失
+error stack: noPatchError: 参数缺失
+    at router.use (E:\workspace\node\koaDemo\routes\api\user_router.js:10:15)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+*************** error log end ***************
+
+[2017-11-15 14:08:42.826] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5063","name":"Brain"}
+response time: 21
+error name: noPatchError
+error message: 匹配失败
+error stack: noPatchError: 匹配失败
+    at router.use (E:\workspace\node\koaDemo\routes\api\user_router.js:10:15)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+*************** error log end ***************
+
+[2017-11-15 14:23:43.148] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5063","name":"Brain"}
+response time: 2
+error name: TypeError
+error message: userManager.delete is not a function
+error stack: TypeError: userManager.delete is not a function
+    at Object.exports.deleteUser (E:\workspace\node\koaDemo\system_modules\user.js:47:30)
+    at exports.deleteUser (E:\workspace\node\koaDemo\app\controllers\user_controller.js:86:32)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at router.use (E:\workspace\node\koaDemo\routes\api\user_router.js:6:11)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:41:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+*************** error log end ***************
+
+[2017-11-15 14:25:11.697] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5063"}
+response time: 3
+error name: TypeError
+error message: userManager.delete is not a function
+error stack: TypeError: userManager.delete is not a function
+    at Object.exports.deleteUser (E:\workspace\node\koaDemo\system_modules\user.js:47:30)
+    at exports.deleteUser (E:\workspace\node\koaDemo\app\controllers\user_controller.js:87:32)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at router.use (E:\workspace\node\koaDemo\routes\api\user_router.js:6:11)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:41:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+*************** error log end ***************
+
+[2017-11-15 14:25:46.042] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5063"}
+response time: 4
+error name: TypeError
+error message: userManager.delete is not a function
+error stack: TypeError: userManager.delete is not a function
+    at Object.exports.deleteUser (E:\workspace\node\koaDemo\system_modules\user.js:48:30)
+    at exports.deleteUser (E:\workspace\node\koaDemo\app\controllers\user_controller.js:86:32)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at router.use (E:\workspace\node\koaDemo\routes\api\user_router.js:6:11)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:41:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+*************** error log end ***************
+
+[2017-11-15 14:26:08.195] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5063"}
+response time: 6
+error name: TypeError
+error message: userManager.delete is not a function
+error stack: TypeError: userManager.delete is not a function
+    at Object.exports.deleteUser (E:\workspace\node\koaDemo\system_modules\user.js:48:30)
+    at exports.deleteUser (E:\workspace\node\koaDemo\app\controllers\user_controller.js:86:32)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at router.use (E:\workspace\node\koaDemo\routes\api\user_router.js:6:11)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:41:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+*************** error log end ***************
+
+[2017-11-15 14:26:24.695] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5063"}
+response time: 7
+error name: TypeError
+error message: userManager.delete is not a function
+error stack: TypeError: userManager.delete is not a function
+    at Object.exports.deleteUser (E:\workspace\node\koaDemo\system_modules\user.js:48:30)
+    at exports.deleteUser (E:\workspace\node\koaDemo\app\controllers\user_controller.js:86:37)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at router.use (E:\workspace\node\koaDemo\routes\api\user_router.js:6:11)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:41:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+*************** error log end ***************
+
+[2017-11-15 14:27:12.813] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5053"}
+response time: 2
+error name: TypeError
+error message: userManager.delete is not a function
+error stack: TypeError: userManager.delete is not a function
+    at Object.exports.deleteUser (E:\workspace\node\koaDemo\system_modules\user.js:47:30)
+    at exports.deleteUser (E:\workspace\node\koaDemo\app\controllers\user_controller.js:86:37)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at router.use (E:\workspace\node\koaDemo\routes\api\user_router.js:6:11)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:41:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+*************** error log end ***************
+
+[2017-11-15 14:28:18.867] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5053"}
+response time: 2
+error name: TypeError
+error message: userManager.delete is not a function
+error stack: TypeError: userManager.delete is not a function
+    at Object.exports.deleteUser (E:\workspace\node\koaDemo\system_modules\user.js:47:30)
+    at exports.deleteUser (E:\workspace\node\koaDemo\app\controllers\user_controller.js:85:37)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at router.use (E:\workspace\node\koaDemo\routes\api\user_router.js:6:11)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:41:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+*************** error log end ***************
+
+[2017-11-15 14:28:55.461] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{}
+response time: 2
+error name: paramsError
+error message: 参数缺失
+error stack: paramsError: 参数缺失
+    at router.use (E:\workspace\node\koaDemo\routes\api\user_router.js:8:15)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+*************** error log end ***************
+
+[2017-11-15 14:28:59.238] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5053"}
+response time: 0
+error name: TypeError
+error message: userManager.delete is not a function
+error stack: TypeError: userManager.delete is not a function
+    at Object.exports.deleteUser (E:\workspace\node\koaDemo\system_modules\user.js:47:30)
+    at exports.deleteUser (E:\workspace\node\koaDemo\app\controllers\user_controller.js:85:37)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at router.use (E:\workspace\node\koaDemo\routes\api\user_router.js:6:11)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:41:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+*************** error log end ***************
+
+[2017-11-15 14:30:41.392] [INFO] resLogger - 
+*************** response log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5053"}
+response time: 149
+response status: 200
+response body: 
+{"code":500,"message":"error"}
+*************** response log end ***************
+
+[2017-11-15 14:31:40.826] [INFO] resLogger - 
+*************** response log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5063"}
+response time: 2
+response status: 200
+response body: 
+{"code":500,"message":"error"}
+*************** response log end ***************
+
+[2017-11-15 14:33:02.295] [INFO] resLogger - 
+*************** response log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5063"}
+response time: 12
+response status: 200
+response body: 
+{"code":200,"message":"success","data":"ok"}
+*************** response log end ***************
+
+[2017-11-15 14:33:38.606] [INFO] resLogger - 
+*************** response log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5063"}
+response time: 14
+response status: 200
+response body: 
+{"code":200,"message":"success","data":"ok"}
+*************** response log end ***************
+
+[2017-11-15 14:33:54.460] [INFO] resLogger - 
+*************** response log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5063"}
+response time: 19
+response status: 200
+response body: 
+{"code":200,"message":"success","data":"ok"}
+*************** response log end ***************
+
+[2017-11-15 14:34:27.642] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5063"}
+response time: 11
+error name: noPatchError
+error message: 匹配失败
+error stack: noPatchError: 匹配失败
+    at router.use (E:\workspace\node\koaDemo\routes\api\user_router.js:8:15)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+*************** error log end ***************
+
+[2017-11-15 14:35:12.187] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5063"}
+response time: 12
+error name: noPatchError
+error message: 匹配失败
+error stack: noPatchError: 匹配失败
+    at router.use (E:\workspace\node\koaDemo\routes\api\user_router.js:8:15)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+*************** error log end ***************
+
+[2017-11-15 14:35:31.532] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5063"}
+response time: 2
+error name: noPatchError
+error message: 匹配失败
+error stack: noPatchError: 匹配失败
+    at router.use (E:\workspace\node\koaDemo\routes\api\user_router.js:8:15)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+*************** error log end ***************
+
+[2017-11-15 14:36:04.371] [INFO] resLogger - 
+*************** response log start ***************
+request method: DELETE
+request originalUrl:  /users/deleteUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5057"}
+response time: 1
+response status: 200
+response body: 
+{"code":200,"message":"success","data":"ok"}
+*************** response log end ***************
+

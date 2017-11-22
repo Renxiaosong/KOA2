@@ -1,0 +1,52 @@
+[2017-11-14 11:10:14.814] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /users/registerUser
+request client ip:  ::1
+request body: 
+{"name":"Herry","age":"16"}
+response time: 2
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-11-14 11:10:47.566] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /users/registerUser
+request client ip:  ::1
+request body: 
+{"name":"Herry","age":"16"}
+response time: 12
+response status: 200
+response body: 
+{"data":"success"}
+*************** response log end ***************
+
+[2017-11-14 11:12:46.333] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /users/registerUser
+request client ip:  ::1
+request body: 
+{"name":"Herry","age":"16"}
+response time: 3
+response status: 200
+response body: 
+{"name":"Herry","age":"16"}
+*************** response log end ***************
+
+[2017-11-14 11:13:40.591] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /users/registerUser
+request client ip:  ::1
+request body: 
+{"name":"Herry","age":"16"}
+response time: 3
+response status: 200
+response body: 
+{"code":0,"message":"success","data":{"name":"Herry","age":"16"}}
+*************** response log end ***************
+

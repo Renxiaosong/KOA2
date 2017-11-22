@@ -1,0 +1,928 @@
+[2017-11-14 14:24:42.265] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /users/registerUser
+request client ip:  ::1
+request body: 
+{"name":"Herry","age":"16"}
+response time: 4
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"name":"Herry","age":"16"}}
+*************** response log end ***************
+
+[2017-11-14 14:27:56.649] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /users/registerUser
+request client ip:  ::1
+request body: 
+{"name":"Herry","age":"16"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"name":"Herry","age":"16"}}
+*************** response log end ***************
+
+[2017-11-14 14:28:19.729] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /users/registerUser
+request client ip:  ::1
+request body: 
+{"name":"Herry","age":"16"}
+response time: 3
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"name":"Herry","age":"16"}}
+*************** response log end ***************
+
+[2017-11-14 14:29:12.631] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 5
+error name: userNotExist
+error message: 用户不存在
+error stack: userNotExist: 用户不存在
+    at exports.getUser (E:\workspace\node\koaDemo\app\controllers\user_controller.js:10:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:41:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at views (E:\workspace\node\koaDemo\node_modules\koa-views\lib\index.js:61:12)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at send.then.done (E:\workspace\node\koaDemo\node_modules\koa-static\index.js:43:20)
+    at <anonymous>
+*************** error log end ***************
+
+[2017-11-14 14:29:36.785] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=1
+request client ip:  ::1
+request query:  {"id":"1"}
+response time: 26
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:29:45.731] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 14:30:00.392] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:01.950] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:02.798] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 3
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:03.515] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:04.158] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:04.788] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:05.096] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 3
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:05.384] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 14:30:05.736] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:06.112] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:06.473] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:06.870] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:07.130] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:07.439] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 3
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:07.810] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:08.090] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:08.475] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 1
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 14:30:08.761] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:09.073] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:09.755] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:10.400] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:11.056] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:11.746] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:12.423] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:12.961] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:13.210] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:13.587] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:13.863] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:14.200] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:14.487] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 14:30:14.815] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:15.910] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:16.359] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 3
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:17.098] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:17.750] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:18.391] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:19.078] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 1
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 14:30:19.789] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:20.450] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=2
+request client ip:  ::1
+request query:  {"id":"2"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:30:57.262] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 3
+error name: userNotExist
+error message: 用户不存在
+error stack: userNotExist: 用户不存在
+    at exports.getUser (E:\workspace\node\koaDemo\app\controllers\user_controller.js:10:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:41:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at views (E:\workspace\node\koaDemo\node_modules\koa-views\lib\index.js:61:12)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at send.then.done (E:\workspace\node\koaDemo\node_modules\koa-static\index.js:43:20)
+    at <anonymous>
+*************** error log end ***************
+
+[2017-11-14 14:34:36.178] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 26
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:34:44.255] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 3
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:35:03.452] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 27
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:35:30.277] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 10
+error name: paramsError
+error message: 参数缺失
+error stack: paramsError: 参数缺失
+    at exports.getUser (E:\workspace\node\koaDemo\app\controllers\user_controller.js:12:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:41:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at views (E:\workspace\node\koaDemo\node_modules\koa-views\lib\index.js:61:12)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at send.then.done (E:\workspace\node\koaDemo\node_modules\koa-static\index.js:43:20)
+    at <anonymous>
+*************** error log end ***************
+
+[2017-11-14 14:37:17.008] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=5a0a49fcdf7a2e1f202e5053
+request client ip:  ::1
+request query:  {"id":"5a0a49fcdf7a2e1f202e5053"}
+response time: 53
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 14:38:10.221] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=5a0a49fcdf7a2e1f202e5053
+request client ip:  ::1
+request query:  {"id":"5a0a49fcdf7a2e1f202e5053"}
+response time: 9
+error name: CastError
+error message: Cast to ObjectId failed for value "[Function: Object]" at path "_id" for model "users"
+error stack: CastError: Cast to ObjectId failed for value "[Function: Object]" at path "_id" for model "users"
+    at new CastError (E:\workspace\node\koaDemo\node_modules\mongoose\lib\error\cast.js:27:11)
+    at ObjectId.cast (E:\workspace\node\koaDemo\node_modules\mongoose\lib\schema\objectid.js:154:13)
+    at ObjectId.SchemaType._castForQuery (E:\workspace\node\koaDemo\node_modules\mongoose\lib\schematype.js:1064:15)
+    at ObjectId.castForQuery (E:\workspace\node\koaDemo\node_modules\mongoose\lib\schema\objectid.js:194:15)
+    at ObjectId.SchemaType.castForQueryWrapper (E:\workspace\node\koaDemo\node_modules\mongoose\lib\schematype.js:1021:15)
+    at cast (E:\workspace\node\koaDemo\node_modules\mongoose\lib\cast.js:269:32)
+    at model.Query.Query.cast (E:\workspace\node\koaDemo\node_modules\mongoose\lib\query.js:3104:12)
+    at model.Query.Query._castConditions (E:\workspace\node\koaDemo\node_modules\mongoose\lib\query.js:1145:10)
+    at model.Query.Query._findOne (E:\workspace\node\koaDemo\node_modules\mongoose\lib\query.js:1347:8)
+    at E:\workspace\node\koaDemo\node_modules\kareem\index.js:250:8
+    at E:\workspace\node\koaDemo\node_modules\kareem\index.js:23:7
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+*************** error log end ***************
+
+[2017-11-14 14:38:18.768] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=5a0a49fcdf7a2e1f202e5053
+request client ip:  ::1
+request query:  {"id":"5a0a49fcdf7a2e1f202e5053"}
+response time: 3
+error name: ReferenceError
+error message: ObjectId is not defined
+error stack: ReferenceError: ObjectId is not defined
+    at Object.exports.findOne (E:\workspace\node\koaDemo\system_modules\user.js:15:23)
+    at exports.getUser (E:\workspace\node\koaDemo\app\controllers\user_controller.js:13:34)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:41:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at views (E:\workspace\node\koaDemo\node_modules\koa-views\lib\index.js:61:12)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at send.then.done (E:\workspace\node\koaDemo\node_modules\koa-static\index.js:43:20)
+    at <anonymous>
+*************** error log end ***************
+
+[2017-11-14 14:39:36.108] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=5a0a49fcdf7a2e1f202e5053
+request client ip:  ::1
+request query:  {"id":"5a0a49fcdf7a2e1f202e5053"}
+response time: 25
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:39:48.747] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=5a0a49fcdf7a2e1f202e5053
+request client ip:  ::1
+request query:  {"id":"5a0a49fcdf7a2e1f202e5053"}
+response time: 32
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:39:49.833] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=5a0a49fcdf7a2e1f202e5053
+request client ip:  ::1
+request query:  {"id":"5a0a49fcdf7a2e1f202e5053"}
+response time: 3
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:39:50.602] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=5a0a49fcdf7a2e1f202e5053
+request client ip:  ::1
+request query:  {"id":"5a0a49fcdf7a2e1f202e5053"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:39:51.305] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=5a0a49fcdf7a2e1f202e5053
+request client ip:  ::1
+request query:  {"id":"5a0a49fcdf7a2e1f202e5053"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:39:51.940] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=5a0a49fcdf7a2e1f202e5053
+request client ip:  ::1
+request query:  {"id":"5a0a49fcdf7a2e1f202e5053"}
+response time: 3
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:39:52.622] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=5a0a49fcdf7a2e1f202e5053
+request client ip:  ::1
+request query:  {"id":"5a0a49fcdf7a2e1f202e5053"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:39:53.740] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=5a0a49fcdf7a2e1f202e5053
+request client ip:  ::1
+request query:  {"id":"5a0a49fcdf7a2e1f202e5053"}
+response time: 2
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5053","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:40:07.017] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /users/getUser?id=5a0a49fcdf7a2e1f202e5055
+request client ip:  ::1
+request query:  {"id":"5a0a49fcdf7a2e1f202e5055"}
+response time: 3
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"_id":"5a0a49fcdf7a2e1f202e5055","name":"tom","age":22}}
+*************** response log end ***************
+
+[2017-11-14 14:56:26.579] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /users/registerUser
+request client ip:  ::1
+request body: 
+{"name":"Herry","age":"16"}
+response time: 27
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"__v":0,"name":"Herry","age":16,"_id":"5a0a939aaba60631b0984070"}}
+*************** response log end ***************
+
+[2017-11-14 14:56:42.450] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: POST
+request originalUrl:  /users/registerUser
+request client ip:  ::1
+request body: 
+{"name":"Herry"}
+response time: 1
+error name: paramsError
+error message: 参数缺失
+error stack: paramsError: 参数缺失
+    at exports.registerUser (E:\workspace\node\koaDemo\app\controllers\user_controller.js:20:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:41:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at views (E:\workspace\node\koaDemo\node_modules\koa-views\lib\index.js:61:12)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at serve (E:\workspace\node\koaDemo\node_modules\koa-static\index.js:47:14)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at logger (E:\workspace\node\koaDemo\node_modules\koa-logger\index.js:50:12)
+*************** error log end ***************
+
+[2017-11-14 14:56:46.382] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /users/registerUser
+request client ip:  ::1
+request body: 
+{"name":"Herry","age":"16"}
+response time: 5
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"__v":0,"name":"Herry","age":16,"_id":"5a0a93aeaba60631b0984071"}}
+*************** response log end ***************
+
+[2017-11-14 14:59:47.019] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /users/registerUser
+request client ip:  ::1
+request body: 
+{"name":"Herry","age":"16"}
+response time: 26
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"__v":0,"name":"Herry","age":16,"_id":"5a0a94620b76cf2e308f70a4"}}
+*************** response log end ***************
+
+[2017-11-14 14:59:53.790] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /users/registerUser
+request client ip:  ::1
+request body: 
+{"name":"Herry","age":"18"}
+response time: 5
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{"__v":0,"name":"Herry","age":18,"_id":"5a0a94690b76cf2e308f70a5"}}
+*************** response log end ***************
+

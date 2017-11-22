@@ -1,0 +1,259 @@
+[2017-11-14 16:34:23.867] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 9
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 16:34:56.595] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 9
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 16:36:25.145] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 9
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 16:39:24.686] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 8
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 16:39:59.463] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 9
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 16:42:01.138] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 9
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 16:43:04.006] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 5
+response status: 200
+response body: 
+{"code":500,"message":"error"}
+*************** response log end ***************
+
+[2017-11-14 16:43:54.433] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 9
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 16:44:32.253] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 7
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 16:44:58.387] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 1
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 16:45:05.304] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 11
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 16:45:30.269] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 9
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 16:45:58.875] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 4
+error name: paramsError
+error message: 参数缺失
+error stack: paramsError: 参数缺失
+    at exports.getUser (E:\workspace\node\koaDemo\app\controllers\user_controller.js:11:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:41:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at views (E:\workspace\node\koaDemo\node_modules\koa-views\lib\index.js:61:12)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at send.then.done (E:\workspace\node\koaDemo\node_modules\koa-static\index.js:43:20)
+    at <anonymous>
+*************** error log end ***************
+
+[2017-11-14 16:46:49.062] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /users/getUser
+request client ip:  ::1
+request query:  {}
+response time: 4
+error name: paramsError
+error message: 参数缺失
+error stack: paramsError: 参数缺失
+    at exports.getUser (E:\workspace\node\koaDemo\app\controllers\user_controller.js:11:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\workspace\node\koaDemo\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at E:\workspace\node\koaDemo\middlewares\response_formatter.js:27:19
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\workspace\node\koaDemo\app.js:41:15)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at views (E:\workspace\node\koaDemo\node_modules\koa-views\lib\index.js:61:12)
+    at dispatch (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:42:32)
+    at next (E:\workspace\node\koaDemo\node_modules\koa-compose\index.js:43:18)
+    at send.then.done (E:\workspace\node\koaDemo\node_modules\koa-static\index.js:43:20)
+    at <anonymous>
+*************** error log end ***************
+
+[2017-11-14 16:46:52.903] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 9
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 16:47:08.493] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 9
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 16:47:30.354] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 10
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+

@@ -1,0 +1,143 @@
+[2017-11-14 15:16:11.407] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"M J"}
+response time: 6
+response status: 200
+response body: 
+{"code":500}
+*************** response log end ***************
+
+[2017-11-14 15:16:58.414] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"M J"}
+response time: 9
+response status: 200
+response body: 
+{"code":500,"message":"error"}
+*************** response log end ***************
+
+[2017-11-14 15:17:32.820] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"M J"}
+response time: 4
+response status: 200
+response body: 
+{"code":500,"message":"error"}
+*************** response log end ***************
+
+[2017-11-14 15:23:54.466] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"M J"}
+response time: 9
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 15:25:32.176] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"M J"}
+response time: 9
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 15:26:42.697] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 8
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 15:28:09.715] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 10
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 15:30:23.304] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 10
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 15:32:32.936] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 10
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 15:35:10.131] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 9
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
+[2017-11-14 15:52:15.670] [INFO] resLogger - 
+*************** response log start ***************
+request method: PATCH
+request originalUrl:  /users/updateUser
+request client ip:  ::1
+request body: 
+{"id":"5a0a49fcdf7a2e1f202e5054","name":"David"}
+response time: 9
+response status: 200
+response body: 
+{"code":200,"message":"success","data":{}}
+*************** response log end ***************
+
