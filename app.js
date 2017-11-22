@@ -58,6 +58,7 @@ router.use('/users',users.routes(),users.allowedMethods());
 
 app.use(router.routes(), router.allowedMethods());
 
+//用户认证
 app.on('error',function (err,ctx) {
     console.log(err);
     logger.error('server error',err,ctx);
