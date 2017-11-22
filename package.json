@@ -11,11 +11,11 @@
     "start_koa": "bin/run"
   },
   "dependencies": {
-    "debug": "^2.6.3",
+    "debug": "^2.6.9",
     "ejs": "~2.3.3",
     "fs": "0.0.1-security",
     "fs.promised": "^3.0.0",
-    "koa": "^2.2.0",
+    "koa": "^2.4.1",
     "koa-bodyparser": "^3.2.0",
     "koa-convert": "^1.2.0",
     "koa-json": "^2.0.2",
@@ -24,10 +24,10 @@
     "koa-router": "^7.3.0",
     "koa-static": "^3.0.0",
     "koa-views": "^5.2.1",
-    "log4js": "^2.3.3",
-    "mongoose": "^4.11.9"
+    "log4js": "^2.3.12",
+    "mongoose": "^4.13.4"
   },
   "devDependencies": {
-    "nodemon": "^1.8.1"
+    "nodemon": "^1.12.1"
   }
 }
