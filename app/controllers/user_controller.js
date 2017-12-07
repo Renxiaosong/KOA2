@@ -1,7 +1,7 @@
 const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorName');
 const usersModule = require('../../system_modules/user');
-
+var redis = require('../../config/redis');
 
 //用户登录
 exports.login = async(ctx,next) =>{
@@ -24,7 +24,9 @@ exports.getUser = async (ctx, next) => {
         const query = {
             _id: params.id
         };
-        ctx.body = await usersModule.findOne(query);
+        const user = await usersModule.findOne(query);
+        redis.set('user', JSON.stringify(user),'ex',90);
+        ctx.body = user;
     } catch (err) {
         ctx.error = err;
     }

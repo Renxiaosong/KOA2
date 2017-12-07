@@ -1,16 +1,15 @@
 const config = require('../config');
-const redis = require('redis');
+var Redis = require('ioredis');
 
-redis.createClient(config.redis_port,config.redis_url,{});
+var redis = new Redis(config.redis_port,config.redis_url);
 
-var client = redis.connection;
 
-client.once('ready',function(){
+redis.once('ready',function(){
     console.log('redis working');
 });
 
 
-client.on('error',function () {
+redis.on('error',function () {
     console.log('redis error')
 });
 

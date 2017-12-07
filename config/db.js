@@ -7,7 +7,7 @@ const redis = require('redis');
 
 // 连接字符串格式为mongodb://主机/数据库名
 mongoose.connect(config.mongodb_url);
-var client = redis.createClient(config.redis_port,config.redis_url,{});
+/*var client = redis.createClient(config.redis_port,config.redis_url,{});
 
 
 client.once('ready',function(){
@@ -16,7 +16,7 @@ client.once('ready',function(){
 
 client.on('error',function () {
     console.log('redis error')
-});
+});*/
 
 
 var db = mongoose.connection;
