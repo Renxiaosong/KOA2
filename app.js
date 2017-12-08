@@ -7,6 +7,9 @@ const json = require('koa-json');
 const onerror = require('koa-onerror');
 const bodyparser = require('koa-bodyparser');
 const logger = require('koa-logger');
+const session = require('koa-session2');
+const Store = require('./utils/store');
+var ApiError = require('./app/error/ApiError');
 
 const users = require('./routes/api/user_router');
 
@@ -21,7 +24,7 @@ onerror(app);
 // middlewares
 app.use(bodyparser({
   enableTypes:['json', 'form', 'text']
-}))
+}));
 app.use(json());
 app.use(convert(logger()));
 app.use(require('koa-static')(__dirname + '/public'));
@@ -30,6 +33,27 @@ app.use(views(__dirname + '/views', {
   extension: 'ejs'
 }));
 
+app.use(session({
+    store: new Store()
+}));
+
+
+app.use(async (ctx,next) => {
+    const route = ctx.path;
+    const list = route.split('/');
+    const path = list[list.length-1];
+    console.log(ctx.session)
+    if(path === 'login'){
+        await next();
+    }else{
+        let user = ctx.session.user;
+        if(user){
+            await next();
+        }else{
+            ctx.body = new ApiError("sessionError")
+        }
+    }
+});
 // logger
 app.use(async (ctx, next) => {
     //响应开始时间

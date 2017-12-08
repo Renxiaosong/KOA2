@@ -21,6 +21,9 @@ const cache = async function (ctx,next) {
         ctx.error = e;
     }
 }
+//用户登录
+router.post('/login',user_controller.login);
+
 //获取用户
 router.get('/getUser',cache, user_controller.getUser);
 

@@ -6,8 +6,14 @@ var redis = require('../../config/redis');
 //用户登录
 exports.login = async(ctx,next) =>{
     try{
-        const params = ctx.query;
-        //还没想好怎么做
+        const body = ctx.request.body;
+        const query = {
+            username: body.userName,
+            password: body.pwd
+        };
+        const user = await usersModule.findOne(query);
+        ctx.session.user = user;
+        ctx.body = user;
     }catch (error){
 
     }
