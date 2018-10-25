@@ -1,7 +1,7 @@
-var router = require('koa-router')();
-var user_controller = require('../../app/controllers/user_controller');
-var ApiError = require('../../app/error/ApiError');
-var redis = require('../../config/redis');
+let router = require('koa-router')();
+let user_controller = require('../../app/controllers/user_controller');
+let ApiError = require('../../app/error/ApiError');
+let redis = require('../../config/redis');
 router.use(async(ctx,next)=>{
     await next();
     if (typeof ctx.error === 'string'){

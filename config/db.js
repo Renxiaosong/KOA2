@@ -2,7 +2,7 @@
  * 数据库操作
  */
 const mongoose = require('mongoose');
-const config = require('../config');
+const config = require('./index');
 const redis = require('redis');
 
 // 连接字符串格式为mongodb://主机/数据库名
@@ -19,7 +19,7 @@ client.on('error',function () {
 });*/
 
 
-var db = mongoose.connection;
+const db = mongoose.connection;
 
 db.on('error', function callback () {
     console.log("Connection error");

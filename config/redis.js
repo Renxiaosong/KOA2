@@ -1,7 +1,7 @@
 const config = require('../config');
-var Redis = require('ioredis');
+let Redis = require('ioredis');
 
-var redis = new Redis(config.redis_port,config.redis_url);
+let redis = new Redis(config.redis_port,config.redis_url);
 
 
 redis.once('ready',function(){
@@ -9,8 +9,8 @@ redis.once('ready',function(){
 });
 
 
-redis.on('error',function () {
-    console.log('redis error')
+redis.on('error',function (err) {
+    console.log('redis error');
 });
 
 
