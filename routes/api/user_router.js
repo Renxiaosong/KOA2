@@ -25,7 +25,7 @@ const cache = async function (ctx,next) {
 router.post('/login',user_controller.login);
 
 //获取用户
-router.get('/getUser',cache, user_controller.getUser);
+router.get('/getUser', user_controller.getUser);
 
 //用户注册
 router.post('/registerUser', user_controller.registerUser);

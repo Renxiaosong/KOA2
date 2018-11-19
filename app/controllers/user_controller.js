@@ -31,7 +31,7 @@ exports.getUser = async (ctx, next) => {
             _id: params.id
         };
         const user = await usersModule.findOne(query);
-        redis.set('user', JSON.stringify(user),'ex',90);
+        // redis.set('user', JSON.stringify(user),'ex',90);
         ctx.body = user;
     } catch (err) {
         ctx.error = err;
