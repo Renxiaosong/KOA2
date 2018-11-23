@@ -58,7 +58,7 @@ exports.findOne = (collectionname,condition,columns) =>{
 
 exports.find = (collectionname,condition,columns)=> {
     return connectDB().then((db)=>{
-        const DB = db.db(config.dbname);
+        const DB = db.db(config.mongodb_db);
         const collections = DB.collection(collectionname);
         const result = collections.find(condition,columns).toArray();
         db.close();
@@ -68,7 +68,7 @@ exports.find = (collectionname,condition,columns)=> {
 
 exports.insertOne = function(collectionname,json){
     return connectDB().then((db)=>{
-        const DB = db.db(config.dbname);
+        const DB = db.db(config.mongodb_db);
         const collection = DB.collection(collectionname);
         const result = collection.insertOne(json);
         db.close();

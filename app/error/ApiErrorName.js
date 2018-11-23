@@ -8,6 +8,7 @@ ApiErrorNames.USER_NOT_EXIST = "userNotExist";
 ApiErrorNames.PARAMS_ERROR = "paramsError";
 ApiErrorNames.NO_PATCH = "noPatchError";
 ApiErrorNames.SESSION_ERR = "sessionError";
+ApiErrorNames.MONGO_ERR = "mongoError";
 
 /**
  * API错误名称对应的错误信息
@@ -19,6 +20,7 @@ error_map.set(ApiErrorNames.USER_NOT_EXIST, { code: 101, message: '用户不存�
 error_map.set(ApiErrorNames.PARAMS_ERROR, { code: 300, message: '参数缺失' });
 error_map.set(ApiErrorNames.NO_PATCH, { code: 400, message: '匹配失败' });
 error_map.set(ApiErrorNames.SESSION_ERR, { code: 403, message: 'sessionError' });
+error_map.set(ApiErrorNames.MONGO_ERR, { code: 500, message: 'mongoError' });
 
 //根据错误名称获取错误信息
 ApiErrorNames.getErrorInfo = (error_name) => {

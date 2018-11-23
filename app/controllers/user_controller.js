@@ -23,15 +23,12 @@ exports.login = async(ctx,next) =>{
 exports.getUser = async (ctx, next) => {
     try {
         const params = ctx.query;
-        if (!params.id) {
-            ctx.error = ApiErrorNames.PARAMS_ERROR;
-            return;
-        }
-        const query = {
-            _id: params.id
-        };
-        const user = await usersModule.findOne(query);
-        // redis.set('user', JSON.stringify(user),'ex',90);
+        // if (!params.id) {
+        //     ctx.error = ApiErrorNames.PARAMS_ERROR;
+        //     return;
+        // }
+        const user = await usersModule.findOne(params);
+        redis.set('user', JSON.stringify(user),'ex',90);
         ctx.body = user;
     } catch (err) {
         ctx.error = err;
@@ -51,7 +48,13 @@ exports.registerUser = async (ctx, next) => {
             name: body.name,
             age: body.age
         };
-        ctx.body = await usersModule.saveUser(user);
+        const result =await usersModule.insertOne(user);
+        if(result.result.n === 1){
+            ctx.body = result.ops
+        }else{
+            ctx.err = "mongoError";
+        }
+
     } catch (err) {
         ctx.error = err;
     }
