@@ -45,7 +45,13 @@ module.exports = mongoose;*/
 // module.exports = redis;
 
 
-
+/**
+ * 查询一个
+ * @param collectionname
+ * @param condition
+ * @param columns
+ * @returns {Promise|*|PromiseLike<void | never>|Promise<void | never>}
+ */
 exports.findOne = (collectionname,condition,columns) =>{
     return connectDB().then((db)=>{
         const DB = db.db(config.mongodb_db);
@@ -56,6 +62,13 @@ exports.findOne = (collectionname,condition,columns) =>{
     });
 };
 
+/**
+ * 按条件查询
+ * @param collectionname
+ * @param condition
+ * @param columns
+ * @returns {Promise|*|PromiseLike<T[] | never>|Promise<T[] | never>}
+ */
 exports.find = (collectionname,condition,columns)=> {
     return connectDB().then((db)=>{
         const DB = db.db(config.mongodb_db);
@@ -66,6 +79,12 @@ exports.find = (collectionname,condition,columns)=> {
     });
 };
 
+/**
+ * 插入一个
+ * @param collectionname
+ * @param json
+ * @returns {Promise|*|PromiseLike<T | never>|Promise<T | never>}
+ */
 exports.insertOne = function(collectionname,json){
     return connectDB().then((db)=>{
         const DB = db.db(config.mongodb_db);

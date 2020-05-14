@@ -29,6 +29,12 @@ exports.findOne = (params) =>{
     })
 };
 
+
+/**
+ * 插入一个
+ * @param data
+ * @returns {Promise<T | never>}
+ */
 exports.insertOne = (data) =>{
     return DB.insertOne(colelctionName,data).then((result) =>{
         return result;

@@ -29,9 +29,9 @@ app.use(json());
 app.use(convert(logger()));
 app.use(require('koa-static')(__dirname + '/public'));
 
-app.use(views(__dirname + '/views', {
-  extension: 'ejs'
-}));
+//app.use(views(__dirname + '/views', {
+//  extension: 'ejs'
+//}));
 
 app.use(session({
     store: new Store()
