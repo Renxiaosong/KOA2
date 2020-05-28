@@ -38,22 +38,23 @@ app.use(session({
 }));
 
 
-// app.use(async (ctx,next) => {
-//     const route = ctx.path;
-//     const list = route.split('/');
-//     const path = list[list.length-1];
-//     console.log(ctx.session)
-//     if(path === 'login'){
-//         await next();
-//     }else{
-//         let user = ctx.session.user;
-//         if(user){
-//             await next();
-//         }else{
-//             ctx.body = new ApiError("sessionError")
-//         }
-//     }
-// });
+app.use(async (ctx,next) => {
+    const route = ctx.path;
+    const list = route.split('/');
+    const path = list[list.length-1];
+    console.log(ctx.session)
+    if(path === 'login'){
+        await next();
+    }else{
+        // let user = ctx.session.user;
+        // if(user){
+        //     await next();
+        // }else{
+        //     ctx.body = new ApiError("sessionError")
+        // }
+        await next();
+    }
+});
 
 
 // logger
