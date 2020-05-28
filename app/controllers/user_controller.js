@@ -8,10 +8,12 @@ exports.login = async(ctx,next) =>{
     try{
         const body = ctx.request.body;
         const query = {
-            username: body.userName,
-            password: body.pwd
+            username: body.userName
         };
         const user = await usersModule.findOne(query);
+        if(user){
+
+        }
         ctx.session.user = user;
         ctx.body = user;
     }catch (error){
